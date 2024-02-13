@@ -19,7 +19,7 @@ AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=la
 AZURE_CONTAINER_NAME = "uploads"
 
 
-AZURE_STORAGE_QUEUE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=projektchmury;AccountKey=DNaPSiZ02BmwzfTri/osfd47RNlUX4FMTXxzGfGvr4Vqlsdc8zc2j+P0ta5G2hyfIlILCOrRvFca+ASt2pKJwg==;BlobEndpoint=https://projektchmury.blob.core.windows.net/;FileEndpoint=https://projektchmury.file.core.windows.net/;QueueEndpoint=https://projektchmury.queue.core.windows.net/;TableEndpoint=https://projektchmury.table.core.windows.net/"
+AZURE_STORAGE_QUEUE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=projektkpchmr;AccountKey=dnurQVpf4AkatCdp9ZL/y2+8DwEXMQZmofDLvGxP0abNbGczK6uZh5ErcteiVQxtnhIKLu1ORdlE+AStTuKqXg==;EndpointSuffix=core.windows.net;QueueEndpoint=https://projektkpchmr.queue.core.windows.net/"
 AZURE_QUEUE_NAME = "chmury"
 
 app.config['SQLALCHEMY_DATABASE_URI'] = (
