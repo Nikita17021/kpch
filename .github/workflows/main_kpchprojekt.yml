@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'kpchprojekt'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9BC2B74AC1154BB0BB9C96D828AFFEF4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3DD2ACADFCCE408B8FC24410A108E14E }}
