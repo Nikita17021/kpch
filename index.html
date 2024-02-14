@@ -2,19 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload and Download</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/yesStyle.css">
 </head>
 <body>
-    <h1>File Upload and Download</h1>
-    <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".txt, .pdf, .doc, .docx">
-        <button type="submit">Upload File</button>
-    </form>
+    <div class="container">
+        <div class="text" >
+            <h1 class = "header_text">Ты будешь моей валентинкой?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media.giphy.com/media/LnKonfpQ44fNvuGLkA/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <div class = "buttons">
+            <button class="btn" id = "yesButton" onclick="nextPage()">Да</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">Нет</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "/yes";
+                }
 
-    <h2>Uploaded Files</h2>
-    {% for file in files %}
-        <p><a href="{{ url_for('download_file', blob_name=file) }}" download>{{ file }}</a></p>
-    {% endfor %}
+                function moveButton() {
+                    let x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                    let y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+
 </body>
 </html>
