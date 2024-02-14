@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'valentinka'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BFF9E5651B5D4261AB10A6DC7476A044 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_358C8E023E234D9F81EC87C265E6C78B }}
